@@ -37,6 +37,9 @@ for key in df:
 
 df_radon = pd.DataFrame(index=df[largest_key].index)
 for key in df:
-    df_radon[key] = df[key]['Radon']
+    if key == 'classRoom':
+        df_radon[key] = df[key]['Radon']
+    else:
+        df_radon['R'+key] = df[key]['Radon']
 
 df_radon.to_excel(output_file, sheet_name='Combined')
