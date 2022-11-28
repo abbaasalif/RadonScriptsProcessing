@@ -1,5 +1,11 @@
 # Scripts for processing Radon data
 
+- Installing dependencies
+
+```pip install -r requirements.txt```
+or 
+```pip3 install -r requirements.txt```
+
 - Combine Radon data from the main xlsx sheet
 
 - Usage for linux based
